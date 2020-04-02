@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2019 The LineageOS Project
  * Copyright (C) 2020 The MoKee Open Source Project
- *
+ * Copyright 2020 The exTHmUI Open Source Project
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-#ifndef VENDOR_MOKEE_LIVEDISPLAY_V2_0_DISPLAYMODES_H
-#define VENDOR_MOKEE_LIVEDISPLAY_V2_0_DISPLAYMODES_H
+#ifndef VENDOR_LINEAGE_LIVEDISPLAY_V2_0_DISPLAYMODES_H
+#define VENDOR_LINEAGE_LIVEDISPLAY_V2_0_DISPLAYMODES_H
 
-#include <vendor/mokee/livedisplay/2.0/IDisplayModes.h>
+#include <vendor/lineage/livedisplay/2.0/IDisplayModes.h>
 
 namespace vendor {
-namespace mokee {
+namespace lineage {
 namespace livedisplay {
 namespace V2_0 {
 namespace sysfs {
@@ -30,7 +30,7 @@ using ::android::hardware::Return;
 using ::android::hardware::Void;
 
 #define FILE_LUT "/sys/class/meizu/lcm/display/lut"
-#define FILE_LUT_DEFAULT "/data/vendor/display/mokee_color_profile"
+#define FILE_LUT_DEFAULT "/data/vendor/display/lineage_color_profile"
 
 class DisplayModes : public IDisplayModes {
   public:
@@ -38,7 +38,7 @@ class DisplayModes : public IDisplayModes {
 
     bool isSupported();
 
-    // Methods from ::vendor::mokee::livedisplay::V2_0::IDisplayModes follow.
+    // Methods from ::vendor::lineage::livedisplay::V2_0::IDisplayModes follow.
     Return<void> getDisplayModes(getDisplayModes_cb _hidl_cb) override;
     Return<void> getCurrentDisplayMode(getCurrentDisplayMode_cb _hidl_cb) override;
     Return<void> getDefaultDisplayMode(getDefaultDisplayMode_cb _hidl_cb) override;
@@ -55,7 +55,7 @@ class DisplayModes : public IDisplayModes {
 }  // namespace sysfs
 }  // namespace V2_0
 }  // namespace livedisplay
-}  // namespace mokee
+}  // namespace lineage
 }  // namespace vendor
 
-#endif  // VENDOR_MOKEE_LIVEDISPLAY_V2_0_DISPLAYMODES_H
+#endif  // VENDOR_LINEAGE_LIVEDISPLAY_V2_0_DISPLAYMODES_H

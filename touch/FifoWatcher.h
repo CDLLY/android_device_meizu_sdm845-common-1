@@ -13,7 +13,7 @@
 #include <pthread.h>
 
 namespace vendor {
-namespace mokee {
+namespace lineage {
 namespace touch {
 namespace V1_0 {
 namespace implementation {
@@ -38,7 +38,7 @@ class FifoWatcher {
 }  // namespace implementation
 }  // namespace V1_0
 }  // namespace touch
-}  // namespace mokee
+}  // namespace lineage
 }  // namespace vendor
 
-#endif  // VENDOR_MOKEE_TOUCH_V1_0_FIFOWATCHER_H
+#endif  // VENDOR_LINEAGE_TOUCH_V1_0_FIFOWATCHER_H
